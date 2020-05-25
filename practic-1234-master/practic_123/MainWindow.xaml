@@ -1,0 +1,45 @@
+﻿<Window x:Class="practic_123.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practic_123"
+        mc:Ignorable="d"
+        Title="Главное окно"  Width="800" Height="600" >
+    <Grid HorizontalAlignment="Right" Width="800" RenderTransformOrigin="0.494,0.424">
+        <Button Content="Удалить" Margin="638,482,0,31" FontFamily="Times New Roman" FontSize="18" Click="Button_Click_1" HorizontalAlignment="Left" Width="138"/>
+
+        <Menu Height="55" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Right" Width="763">
+            <MenuItem Header="        Модули" Height="51" Width="109">
+                <MenuItem Header="Присоединение к БД" Click="Button_BD">
+                </MenuItem>
+                <MenuItem x:Name="btnOpenFile" Click="btnOpenFile_Click" Header="Открыть текстовый файл" ></MenuItem>
+                <MenuItem Header="Открыть изображение" Click="Button_PNG">
+                </MenuItem>
+                <MenuItem Name="music" Header="Открыть Музыку" Click="Button_music">
+                </MenuItem>
+                <MenuItem x:Name="EXIT" Click="EXIT_Click" Header="Выход" >
+                </MenuItem>
+                <Separator />
+            </MenuItem>
+            <MenuItem  Header="     Настройки" Click="Button_Click6" Height="51" Width="109" >
+                <MenuItem Header="Фон" Click="Button_Click6">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="   О программе" Click="Button_Click1" RenderTransformOrigin="0.5,0.5" Height="51" Width="109" >
+                <MenuItem.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.696"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </MenuItem.RenderTransform>
+            </MenuItem>
+        </Menu>
+        <DockPanel Margin="37,47,33,125">
+            <TextBox Name="txtEditor" Width="754" Background="Black" Foreground ="White" Height="366" />
+        </DockPanel>
+        <StackPanel Name="stackPanelAdd" Margin="37,70,33,107" />
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wocUodAjgHgeMRM6bvUpwAHNkB+utUKDXxJSyyQwZp4c3VxAYm9hQwtRcQR09OToA3VoW7YrkcNnoJ4LsGUJqQ==",
+  "success": true,
+  "projectFilePath": "F:\\РАБОЧИЙ СТОЛ\\мое\\practic-1234-master\\practic_123\\practic_123.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alexn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
